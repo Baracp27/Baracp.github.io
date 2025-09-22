@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- This is your page title that shows up in the browser tab -->
+    <title>Portfolio of Pratik Barachha</title>
+    
+    <!-- This script adds fancy styling to your page (Tailwind CSS) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- This script adds cool icons to your page (Lucide Icons) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Google Fonts for a nice, clean look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* A little bit of custom style to make things look nice */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .icon-style {
+            width: 24px;
+            height: 24px;
+            stroke-width: 2;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-indigo-900 text-gray-200">
+
+    <!-- Header Section -->
+    <header class="sticky top-0 z-50 py-6 px-4 sm:px-6 lg:px-8 bg-white/5 backdrop-blur-xl shadow-lg border-b border-white/10">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold text-white">
+                Pratik Barachha
+            </h1>
+            <nav>
+                <a href="#experience" class="text-gray-300 hover:text-white font-medium ml-6">Experience</a>
+                <a href="#skills" class="text-gray-300 hover:text-white font-medium ml-6">Skills</a>
+                <a href="#contact" class="text-gray-300 hover:text-white font-medium ml-6">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto mt-12 mb-16 px-4 sm:px-6 lg:px-8">
+
+        <!-- Hero Section: Your Introduction -->
+        <section class="text-center">
+            <img 
+                src="https://placehold.co/128x128/e0e7ff/3730a3?text=PB" 
+                alt="Pratik Barachha's Logo" 
+                class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg"
+            >
+            <h2 class="text-4xl md:text-5xl font-bold mb-2">Hi, I'm <span class="gradient-text">Pratik Barachha</span></h2>
+            <p class="text-xl md:text-2xl text-gray-300">Application Support Executive</p>
+            <p class="max-w-3xl mx-auto mt-6 text-lg text-gray-300">
+                Application Support Executive with 10 years of experience in L2 support, incident management, and production deployments across logistics and IT services. I specialize in troubleshooting, SQL scripting, and ensuring high availability for business-critical applications.
+            </p>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mt-20">
+            <h3 class="text-3xl font-bold text-center mb-12 text-white">Professional Experience</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Experience 1 -->
+                <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-1 text-white">Senior Executive Support</h4>
+                        <p class="font-medium text-gray-300 mb-2">Intech Creative Services Pvt Ltd | 2022 - Present</p>
+                        <p class="text-gray-300">Acted as SME for Vehicle Appointment System (VAS) within Zodiac TOS. Delivered 24x7 application support, coordinated UAT & production patch deployments, and prepared detailed RCA reports to ensure operational continuity.</p>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-1 text-white">System Engineer</h4>
+                        <p class="font-medium text-gray-300 mb-2">Tata Consultancy Services (TCS) | 2019 - 2022</p>
+                        <p class="text-gray-300">Monitored critical applications and databases, resolving high-priority issues to prevent service disruptions. Conducted system health checks, patching, and provided weekly client status reports.</p>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                     <div class="p-6">
+                        <h4 class="text-xl font-bold mb-1 text-white">Application Development Analyst</h4>
+                        <p class="font-medium text-gray-300 mb-2">Accenture Solutions Pvt Ltd | 2015 - 2018</p>
+                        <p class="text-gray-300">Delivered L1/L2 incident support for enterprise applications like SAP and Servigistics. Authored runbooks and SOPs, reducing onboarding time for new hires by 30%, and provided 24x7 rotational support.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" class="mt-20">
+            <h3 class="text-3xl font-bold text-center mb-12 text-white">Core Competencies</h3>
+            <div class="max-w-4xl mx-auto flex flex-wrap justify-center gap-4">
+                <div class="flex items-center bg-white/10 backdrop-blur-lg border border-white/20 py-2 px-4 rounded-full shadow-lg">
+                    <i data-lucide="shield-alert" class="icon-style text-red-400 mr-2"></i>
+                    <span class="font-medium text-white">Incident Management</span>
+                </div>
+                <div class="flex items-center bg-white/10 backdrop-blur-lg border border-white/20 py-2 px-4 rounded-full shadow-lg">
+                    <i data-lucide="database" class="icon-style text-blue-400 mr-2"></i>
+                    <span class="font-medium text-white">SQL Server & Oracle</span>
+                </div>
+                <div class="flex items-center bg-white/10 backdrop-blur-lg border border-white/20 py-2 px-4 rounded-full shadow-lg">
+                    <i data-lucide="git-pull-request-arrow" class="icon-style text-purple-400 mr-2"></i>
+                    <span class="font-medium text-white">Release Management</span>
+                </div>
+                 <div class="flex items-center bg-white/10 backdrop-blur-lg border border-white/20 py-2 px-4 rounded-full shadow-lg">
+                    <i data-lucide="settings-2" class="icon-style text-gray-400 mr-2"></i>
+                    <span class="font-medium text-white">ServiceNow</span>
+                </div>
+                <div class="flex items-center bg-white/10 backdrop-blur-lg border border-white/20 py-2 px-4 rounded-full shadow-lg">
+                    <i data-lucide="server" class="icon-style text-green-400 mr-2"></i>
+                    <span class="font-medium text-white">Windows Server & Linux</span>
+                </div>
+                 <div class="flex items-center bg-white/10 backdrop-blur-lg border border-white/20 py-2 px-4 rounded-full shadow-lg">
+                    <i data-lucide="puzzle" class="icon-style text-yellow-400 mr-2"></i>
+                    <span class="font-medium text-white">Root Cause Analysis</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mt-20 text-center">
+             <h3 class="text-3xl font-bold text-center mb-4 text-white">Get In Touch</h3>
+             <p class="text-lg text-gray-300 mb-8">I'm always open to discussing new opportunities and challenges.</p>
+             <div class="flex justify-center items-center space-x-6">
+                <a href="mailto:barachha.pratik@gmail.com" class="text-white font-bold text-lg bg-white/10 backdrop-blur-lg border border-white/20 py-3 px-6 rounded-lg hover:bg-white/20 transition-colors">
+                    barachha.pratik@gmail.com
+                </a>
+                <a href="#" class="text-gray-300 hover:text-white" title="Link to your GitHub profile">
+                     <i data-lucide="github" class="w-8 h-8"></i>
+                </a>
+                 <a href="#" class="text-gray-300 hover:text-white" title="Link to your LinkedIn profile">
+                     <i data-lucide="linkedin" class="w-8 h-8"></i>
+                </a>
+             </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-black/20 mt-16 border-t border-white/10">
+        <p class="text-gray-400">&copy; 2025 Pratik Barachha. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // This little script makes the icons show up!
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
+
